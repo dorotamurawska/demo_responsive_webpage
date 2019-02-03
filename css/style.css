@@ -1,0 +1,340 @@
+/* font-family: 'Open Sans Condensed', sans-serif; */
+/* font-family: 'Open Sans', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+/* ---header--- */
+
+header {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/bg_header_1920.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  text-transform: uppercase;
+
+}
+
+header div.bgc-header {
+  position: relative;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .5);
+
+}
+
+header div.header {
+  position: absolute;
+  top: 10%;
+  bottom: 5%;
+  left: 5%;
+  width: 90%;
+  text-align: center;
+}
+
+header p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 18px;
+
+}
+
+header h1 {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 2%;
+  padding-bottom: 10%;
+  border-top: .5px solid white;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+header button {
+  padding: 7px 30px;
+  border: 1px solid white;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, .2);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 18px;
+}
+
+header div.arrows {
+  position: absolute;
+  bottom: 20px;
+  left: 45%;
+  width: 10%;
+  font-size: 18px;
+}
+
+/* size min-width: 360px */
+
+@media (min-width: 360px) and (orientation: portrait) {
+
+  header p,
+  header div.arrows,
+  header button {
+    font-size: 20px;
+
+  }
+
+  header h1 {
+    font-size: 36px;
+  }
+
+  header button {
+    letter-spacing: 1.5px;
+    font-size: 20px;
+  }
+
+}
+
+/* size min-width: 384px */
+
+@media (min-width: 384px) and (orientation: portrait) {
+
+  header div.header {
+    top: 12%;
+  }
+
+  header p,
+  header div.arrows,
+  header button {
+    font-size: 24px;
+
+  }
+
+  header h1 {
+    font-size: 38px;
+  }
+
+  header button {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    letter-spacing: 2px;
+  }
+}
+
+/* size min-width: 480px */
+
+@media (min-width: 480px) and (orientation: portrait) {
+
+  header p,
+  header div.arrows,
+  header button {
+    font-size: 28px;
+
+  }
+
+  header h1 {
+    font-size: 48px;
+  }
+
+  header button {
+    padding: 11px 40px;
+    border-radius: 40px;
+  }
+}
+
+/* size min-width: 600px */
+@media (min-width: 600px) and (orientation: portrait) {
+
+  header p,
+  header div.arrows,
+  header button {
+    font-size: 32px;
+
+  }
+
+  header h1 {
+    font-size: 58px;
+  }
+
+  header button {
+    padding: 13px 55px;
+    border-radius: 55px;
+  }
+
+}
+
+/* size min-width: 768px */
+@media (min-width: 768px) and (orientation: portrait) {
+
+  header p,
+  header div.arrows,
+  header button {
+    font-size: 42px;
+
+  }
+
+  header h1 {
+    border-width: 2px;
+    font-size: 76px;
+  }
+
+  header button {
+    padding: 14px 65px;
+    border-width: 2px;
+    border-radius: 65px;
+    letter-spacing: 3px;
+  }
+}
+
+
+/* orientation: landscape */
+
+@media (orientation: landscape) {
+
+
+  header h1 {
+    padding-top: 1%;
+    padding-bottom: 5%;
+    width: 65%;
+    font-size: 34px;
+  }
+}
+
+/* size min-width: 533px;*/
+@media (orientation: landscape) and (min-width: 533px) {
+
+
+  header h1 {
+    font-size: 38px;
+  }
+}
+
+/* size min-width: 640px;*/
+@media (orientation: landscape) and (min-width: 640px) {
+
+  header p,
+  header div.arrows,
+  header button {
+    font-size: 22px;
+
+  }
+
+  header h1 {
+    padding-bottom: 4%;
+    font-size: 44px;
+  }
+
+  header button {
+    padding: 6px 35px;
+    border-radius: 35px;
+    letter-spacing: 1.5px;
+  }
+
+}
+
+/* size min-width: 823px;*/
+@media (orientation: landscape) and (min-width: 736px) {
+
+  header p,
+  header div.arrows,
+  header button {
+    font-size: 24px;
+
+  }
+
+  header h1 {
+    width: 70%;
+    font-size: 56px;
+  }
+
+  header button {
+    padding: 7px 38px;
+    border-radius: 38px;
+  }
+
+}
+
+/* size min-width: 1024px;*/
+@media (orientation: landscape) and (min-width: 1024px) {
+
+  header p,
+  header div.arrows,
+  header button {
+    font-size: 30px;
+
+  }
+
+  header h1 {
+    font-size: 70px;
+    border-width: 2px;
+  }
+
+  header button {
+    padding: 8px 45px;
+    border-radius: 45px;
+    border-width: 2px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  header button:hover {
+    background-color: rgba(255, 255, 255, .5);
+    color: #222;
+  }
+
+}
+
+
+/* size min-width: 1280px;*/
+@media (orientation: landscape) and (min-width: 1280px) {
+
+  header p,
+  header div.arrows,
+  header button {
+    font-size: 40px;
+
+  }
+
+  header h1 {
+    font-size: 90px;
+  }
+
+  header button {
+    padding: 9px 50px;
+    border-radius: 50px;
+    letter-spacing: 3px;
+  }
+
+}
+
+/* size min-width: 1600px;*/
+@media (orientation: landscape) and (min-width: 1600px) {
+
+  header p,
+  header div.arrows,
+  header button {
+    font-size: 46px;
+
+  }
+
+  header h1 {
+    font-size: 120px;
+  }
+
+  header button {
+    padding: 10px 55px;
+    border-radius: 55px;
+  }
+
+}
