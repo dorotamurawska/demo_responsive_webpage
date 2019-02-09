@@ -1,7 +1,9 @@
 /* font-family: 'Open Sans Condensed', sans-serif; */
 /* font-family: 'Open Sans', sans-serif; */
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -27,6 +29,7 @@ header {
   font-family: 'Open Sans', sans-serif;
   color: white;
   text-transform: uppercase;
+  overflow-y: hidden;
 
 }
 
@@ -53,7 +56,7 @@ header p {
 }
 
 header h1 {
-  width: 90%;
+  display: inline-block;
   margin-right: auto;
   margin-left: auto;
   padding-top: 2%;
@@ -64,6 +67,9 @@ header h1 {
 }
 
 header button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
   padding: 7px 30px;
   border: 1px solid white;
   border-radius: 30px;
@@ -77,7 +83,7 @@ header button {
 
 header div.arrows {
   position: absolute;
-  bottom: 20px;
+  bottom: 5vmin;
   left: 45%;
   width: 10%;
   font-size: 18px;
@@ -205,7 +211,6 @@ header div.arrows {
   header h1 {
     padding-top: 1%;
     padding-bottom: 5%;
-    width: 65%;
     font-size: 34px;
   }
 }
@@ -242,7 +247,7 @@ header div.arrows {
 
 }
 
-/* size min-width: 823px;*/
+/* size min-width: 736px;*/
 @media (orientation: landscape) and (min-width: 736px) {
 
   header p,
@@ -253,7 +258,6 @@ header div.arrows {
   }
 
   header h1 {
-    width: 70%;
     font-size: 56px;
   }
 
@@ -338,3 +342,455 @@ header div.arrows {
   }
 
 }
+
+
+/*section pusta do uzupelnienia*/
+
+section.pusta {
+  height: 100vh;
+}
+
+
+/* ---section two - meet us--- */
+
+section.meet-us {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 25vh;
+  width: 100%;
+  background-image: url(../img/bg_section_meet_us_1920.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  text-transform: uppercase;
+
+}
+
+section.meet-us div.bgc-section-meet-us {
+  height: 100%;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+section.meet-us div.wrap-meet-us {
+  width: 70%;
+  height: 16vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10%;
+  border: 1px solid white;
+  text-align: center;
+}
+
+section.meet-us p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 14px;
+}
+
+section.meet-us h2 {
+  display: inline-block;
+  border-top: .5px solid white;
+  font-weight: 400;
+  font-size: 31px;
+}
+
+/* size min-width: 360px */
+
+@media (min-width: 360px) {
+
+  section.meet-us p {
+    font-size: 16px;
+
+  }
+
+  section.meet-us h2 {
+    font-size: 35px;
+  }
+
+}
+
+/* size min-width: 480px */
+
+@media (min-width: 480px) {
+
+  section.meet-us p {
+    font-size: 20px;
+
+  }
+
+  section.meet-us h2 {
+    font-size: 47px;
+  }
+
+}
+
+/* size min-width: 600px */
+
+@media (min-width: 600px) {
+
+  section.meet-us p {
+    font-size: 22px;
+
+  }
+
+  section.meet-us h2 {
+    font-size: 56px;
+  }
+
+}
+
+/* size min-width: 768px */
+
+@media (min-width: 768px) {
+
+  section.meet-us p {
+    font-size: 24px;
+
+  }
+
+  section.meet-us h2 {
+    font-size: 74px;
+  }
+
+}
+
+/* orientation: landscape */
+
+@media (orientation: landscape) {
+  section.meet-us {
+    height: 25vw;
+
+  }
+
+  section.meet-us div.bgc-section-meet-us {
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+  }
+
+  section.meet-us div.wrap-meet-us {
+    height: 15vw;
+    padding: 2vw 20%;
+  }
+
+  section.meet-us p {
+    font-size: 14px;
+  }
+
+  section.meet-us h2 {
+    font-size: 28px;
+  }
+}
+
+/* size min-width: 640px;*/
+@media (orientation: landscape) and (min-width: 640px) {
+  section.meet-us p {
+    font-size: 16px;
+  }
+
+  section.meet-us h2 {
+    font-size: 36px;
+  }
+}
+
+/* size min-width: 823px;*/
+@media (orientation: landscape) and (min-width: 823px) {
+  section.meet-us p {
+    font-size: 18px;
+  }
+
+  section.meet-us h2 {
+    font-size: 48px;
+  }
+}
+
+/* size min-width: 1024px;*/
+@media (orientation: landscape) and (min-width: 1024px) {
+  section.meet-us p {
+    font-size: 20px;
+  }
+
+  section.meet-us h2 {
+    font-size: 60px;
+  }
+}
+
+/* size min-width: 1280px;*/
+@media (orientation: landscape) and (min-width: 1280px) {
+  section.meet-us p {
+    font-size: 24px;
+  }
+
+  section.meet-us h2 {
+    font-size: 74px;
+  }
+}
+
+/* size min-width: 1600px;*/
+@media (orientation: landscape) and (min-width: 1600px) {
+  section.meet-us p {
+    font-size: 26px;
+  }
+
+  section.meet-us h2 {
+    font-size: 94px;
+  }
+}
+
+/* ---section three - persons--- */
+
+section.persons {
+  width: 100%;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Open Sans', sans-serif;
+}
+
+section.persons div.description {
+  margin-top: 5vmax;
+  width: 90%;
+  height: 35vmax;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 10px 0;
+  border: 2px solid #444;
+  border-bottom: none;
+  text-align: center;
+  color: #444;
+
+}
+
+section.persons h1 {
+  color: black;
+  font-size: 24px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+section.persons h2 {
+  display: inline-block;
+  padding-bottom: 5px;
+  border-bottom: 2px #c12525 solid;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+section.persons p {
+  padding: 25px 0;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+section.persons div.foto {
+  position: relative;
+  width: 100%;
+  height: 40vmax;
+  padding: 0;
+  background-image: url(../img/people1_1280.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+section.persons.two div.foto {
+  background-image: url(../img/people2_1280.jpg);
+}
+
+section.persons.three div.foto {
+  background-image: url(../img/people3_1280.jpg);
+}
+
+section.persons.four div.foto {
+  background-image: url(../img/people4_1280.jpg);
+}
+
+section.persons div.border {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 35vmax;
+  border: 2px solid white;
+  border-top: none;
+
+}
+
+
+/*
+section.persons div.triangle {
+  background-image: linear-gradient(45deg, transparent 50%, white 50%);
+  position: absolute;
+  top: -20px;
+  left: calc(50% - 20px);
+  transform: rotate(135deg);
+  height: 40px;
+  width: 40px;
+}
+*/
+
+section.persons div.triangle {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 30px);
+  /*
+  width: 0;
+  height: 0;
+*/
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid #fff;
+}
+
+
+/* size min-width: 480px */
+
+@media (min-width: 480px) {
+
+  section.persons h1 {
+    font-size: 30px;
+  }
+
+
+  section.persons h2 {
+    border-bottom-width: 3px;
+    font-size: 18px;
+
+  }
+
+  section.persons p {
+    padding: 30px 0;
+    font-size: 18px;
+  }
+
+}
+
+/* size min-width: 533px two columns*/
+
+@media (min-width: 533px) {
+
+  section.persons div.right {
+    float: right;
+  }
+
+  section.persons div.left {
+    float: left;
+  }
+
+  section.persons div.description {
+    /*    margin-top: 5vmax;*/
+    position: relative;
+    width: 50%;
+    margin: 0;
+    height: 40vmax;
+    padding: 0;
+    /*
+    height: 35vmax;
+    margin-left: auto;
+    margin-right: auto;
+*/
+    /*    padding: 20px 10px 0;*/
+    /*    border: 2px solid #444;*/
+    border: none;
+    /*    text-align: center;*/
+    /*    color: #444;*/
+
+  }
+
+  section.persons div.description::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    /*    right: 0;*/
+    width: 90%;
+    height: 35vmax;
+    margin: 5%;
+    margin-right: 0;
+    border: 2px solid #444;
+    /*    border-right: none;*/
+  }
+
+  section.persons div.description.left::before {
+    /*
+    content: "";
+    display: block;
+    position: absolute;
+*/
+    /*    top: 0;*/
+    right: 0;
+    /*
+    width: 90%;
+    height: 35vmax;
+    margin: 5%;
+*/
+    margin-right: 0;
+    /*    border: 2px solid #444;*/
+    border-right: none;
+  }
+
+  section.persons div.description.right::before {
+    /*
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+*/
+    left: 0;
+    right: auto;
+    /*
+    width: 90%;
+    height: 35vmax;
+*/
+    margin-left: 0;
+    margin-right: 5%;
+    border-right: 2px solid #444;
+    border-left: none;
+  }
+
+  section.persons h1 {
+    font-size: 24px;
+    padding-top: 20px;
+
+  }
+
+  section.persons h2 {
+    border-bottom-width: 2px;
+    font-size: 14px;
+  }
+
+  section.persons p {
+    padding: 25px 7% 10px;
+    font-size: 14px;
+  }
+
+  section.persons div.foto {
+    width: 50%;
+  }
+
+  section.persons div.border {
+    margin: 5%;
+    margin-left: 0;
+    border-top: 2px solid white;
+    border-left: none;
+
+  }
+
+  section.persons .left div.triangle {
+    top: calc(50% - 30px);
+    left: 0;
+    /*
+  width: 0;
+  height: 0;
+*/
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid #fff;
+  }
