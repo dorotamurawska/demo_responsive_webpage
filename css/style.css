@@ -6,6 +6,7 @@
 *::after {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -30,14 +31,12 @@ header {
   color: white;
   text-transform: uppercase;
   overflow-y: hidden;
-
 }
 
 header div.bgc-header {
   position: relative;
   height: 100vh;
   background-color: rgba(0, 0, 0, .5);
-
 }
 
 header div.header {
@@ -52,7 +51,6 @@ header div.header {
 header p {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 18px;
-
 }
 
 header h1 {
@@ -97,7 +95,6 @@ header div.arrows {
   header div.arrows,
   header button {
     font-size: 20px;
-
   }
 
   header h1 {
@@ -145,7 +142,6 @@ header div.arrows {
   header div.arrows,
   header button {
     font-size: 28px;
-
   }
 
   header h1 {
@@ -165,7 +161,6 @@ header div.arrows {
   header div.arrows,
   header button {
     font-size: 32px;
-
   }
 
   header h1 {
@@ -176,7 +171,6 @@ header div.arrows {
     padding: 13px 55px;
     border-radius: 55px;
   }
-
 }
 
 /* size min-width: 768px */
@@ -186,7 +180,6 @@ header div.arrows {
   header div.arrows,
   header button {
     font-size: 42px;
-
   }
 
   header h1 {
@@ -204,7 +197,6 @@ header div.arrows {
 
 /* orientation: landscape */
 @media (orientation: landscape) {
-
 
   header h1 {
     padding-top: 1%;
@@ -267,7 +259,6 @@ header div.arrows {
   header div.arrows,
   header button {
     font-size: 30px;
-
   }
 
   header h1 {
@@ -280,6 +271,7 @@ header div.arrows {
     border-radius: 45px;
     border-width: 2px;
     letter-spacing: 2px;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
     cursor: pointer;
   }
@@ -288,9 +280,7 @@ header div.arrows {
     background-color: rgba(255, 255, 255, .5);
     color: #222;
   }
-
 }
-
 
 /* size min-width: 1280px;*/
 @media (orientation: landscape) and (min-width: 1280px) {
@@ -299,7 +289,6 @@ header div.arrows {
   header div.arrows,
   header button {
     font-size: 40px;
-
   }
 
   header h1 {
@@ -311,7 +300,6 @@ header div.arrows {
     border-radius: 50px;
     letter-spacing: 3px;
   }
-
 }
 
 /* size min-width: 1600px;*/
@@ -321,7 +309,6 @@ header div.arrows {
   header div.arrows,
   header button {
     font-size: 46px;
-
   }
 
   header h1 {
@@ -332,23 +319,18 @@ header div.arrows {
     padding: 10px 55px;
     border-radius: 55px;
   }
-
 }
-
 
 /*section pusta do uzupelnienia*/
-
+/* 
 section.pusta {
   height: 100vh;
-}
-
-
-/* ---section two - meet us, section - portfolio--- */
+} */
+/* ---section - meet us, section - portfolio--- */
 section.meet-us,
 section.portfolio {
   max-width: 1920px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 5vmax auto;
   height: 25vh;
   width: 100%;
   background-image: url(../img/bg_section_meet_us_1920.jpg);
@@ -555,7 +537,7 @@ section.portfolio h2 {
   }
 }
 
-/* ---section three - persons--- */
+/* ---section - persons--- */
 
 section.persons {
   width: 100%;
@@ -576,7 +558,6 @@ section.persons div.description {
   border-bottom: none;
   text-align: center;
   color: #444;
-
 }
 
 section.persons h1 {
@@ -586,7 +567,6 @@ section.persons h1 {
   font-weight: bold;
   text-transform: uppercase;
 }
-
 
 section.persons h2 {
   display: inline-block;
@@ -770,65 +750,149 @@ section.persons div.triangle {
     border-right: 30px solid #fff;
     border-left: 0;
   }
+}
 
-  /* size min-width: 700px;*/
-  @media (min-width: 700px) {
-    section.persons h1 {
-      padding-top: 2vh;
-      font-size: 32px;
-    }
-
-    section.persons h2 {
-      font-size: 20px;
-    }
-
-    section.persons p {
-      font-size: 18px;
-    }
-
-    section.persons div.triangle {
-      top: calc(50% - 40px);
-      border-top: 40px solid transparent;
-      border-bottom: 40px solid transparent;
-      border-left: 40px solid #fff;
-    }
-
-    section.persons .right div.triangle {
-      top: calc(50% - 40px);
-      left: calc(100% - 40px);
-      border-right: 40px solid #fff;
-      border-left: 0;
-    }
-
+/* size min-width: 700px;*/
+@media (min-width: 700px) {
+  section.persons h1 {
+    padding-top: 2vh;
+    font-size: 32px;
   }
 
-  /* size min-width: 1024px;*/
-  @media (min-width: 1024px) {
-    section.persons h1 {
-      padding-top: 5vh;
-      font-size: 40px;
-    }
-
-    section.persons h2 {
-      font-size: 30px;
-    }
-
-    section.persons p {
-      font-size: 28px;
-    }
-
-    section.persons div.triangle {
-      top: calc(50% - 50px);
-      border-top: 50px solid transparent;
-      border-bottom: 50px solid transparent;
-      border-left: 50px solid #fff;
-    }
-
-    section.persons .right div.triangle {
-      top: calc(50% - 50px);
-      left: calc(100% - 50px);
-      border-right: 50px solid #fff;
-      border-left: 0;
-    }
-
+  section.persons h2 {
+    font-size: 20px;
   }
+
+  section.persons p {
+    font-size: 18px;
+  }
+
+  section.persons div.triangle {
+    top: calc(50% - 40px);
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left: 40px solid #fff;
+  }
+
+  section.persons .right div.triangle {
+    top: calc(50% - 40px);
+    left: calc(100% - 40px);
+    border-right: 40px solid #fff;
+    border-left: 0;
+  }
+}
+
+/* size min-width: 1024px;*/
+@media (min-width: 1024px) {
+  section.persons h1 {
+    padding-top: 5vh;
+    font-size: 40px;
+  }
+
+  section.persons h2 {
+    font-size: 30px;
+  }
+
+  section.persons p {
+    font-size: 28px;
+  }
+
+  section.persons div.triangle {
+    top: calc(50% - 50px);
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 50px solid #fff;
+  }
+
+  section.persons .right div.triangle {
+    top: calc(50% - 50px);
+    left: calc(100% - 50px);
+    border-right: 50px solid #fff;
+    border-left: 0;
+  }
+}
+
+/* ---section - gallery--- */
+
+section.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-width: 1600px;
+  min-height: 300px;
+  height: 50vmax;
+  margin: 0 auto;
+}
+
+section.gallery div.project {
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  background-image: url(../img/project_one_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: sepia(100%);
+  filter: sepia(100%);
+  opacity: .7;
+  border: 1px solid #ddd;
+  -webkit-transition: .2s;
+  -webkit-transition: .2s;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+section.gallery div.project:nth-child(2) {
+  background-image: url(../img/project_two_1280.jpg);
+}
+
+section.gallery div.project:nth-child(3) {
+  background-image: url(../img/project_three_1280.jpg);
+}
+
+section.gallery div.project:nth-child(4) {
+  background-image: url(../img/project_four_1280.jpg);
+}
+
+section.gallery div.project:nth-child(5) {
+  background-image: url(../img/project_five_1280.jpg);
+}
+
+section.gallery div.project:nth-child(6) {
+  background-image: url(../img/project_six_1280.jpg);
+}
+
+section.gallery div.project:nth-child(7) {
+  background-image: url(../img/project_seven_1280.jpg);
+}
+
+section.gallery div.project:nth-child(8) {
+  background-image: url(../img/project_eight_1280.jpg);
+}
+
+/* size min-width: 640px four columns */
+@media (min-width: 640px) {
+  section.gallery div.project {
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+  }
+}
+
+/* size min-width: 1024px */
+@media (min-width: 1024px) {
+  section.gallery div.project:hover {
+    -webkit-filter: sepia(0);
+    filter: sepia(0);
+    opacity: 1;
+  }
+}
+
+footer {
+  height: 10vh;
+  margin-top: 5vh;
+  background-color: #333;
+}
