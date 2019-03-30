@@ -202,9 +202,7 @@ header div.arrows {
   }
 }
 
-
 /* orientation: landscape */
-
 @media (orientation: landscape) {
 
 
@@ -217,8 +215,6 @@ header div.arrows {
 
 /* size min-width: 533px;*/
 @media (orientation: landscape) and (min-width: 533px) {
-
-
   header h1 {
     font-size: 38px;
   }
@@ -231,7 +227,6 @@ header div.arrows {
   header div.arrows,
   header button {
     font-size: 22px;
-
   }
 
   header h1 {
@@ -244,7 +239,6 @@ header div.arrows {
     border-radius: 35px;
     letter-spacing: 1.5px;
   }
-
 }
 
 /* size min-width: 736px;*/
@@ -254,7 +248,6 @@ header div.arrows {
   header div.arrows,
   header button {
     font-size: 24px;
-
   }
 
   header h1 {
@@ -265,7 +258,6 @@ header div.arrows {
     padding: 7px 38px;
     border-radius: 38px;
   }
-
 }
 
 /* size min-width: 1024px;*/
@@ -351,9 +343,9 @@ section.pusta {
 }
 
 
-/* ---section two - meet us--- */
-
-section.meet-us {
+/* ---section two - meet us, section - portfolio--- */
+section.meet-us,
+section.portfolio {
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
@@ -367,17 +359,22 @@ section.meet-us {
   font-family: 'Open Sans', sans-serif;
   color: white;
   text-transform: uppercase;
-
 }
 
-section.meet-us div.bgc-section-meet-us {
+section.portfolio {
+  background-image: url(../img/bg_section_portfolio_1920.jpg);
+}
+
+section.meet-us div.bgc-section-meet-us,
+section.portfolio div.bgc-section-portfolio {
   height: 100%;
   padding-top: 5vh;
   padding-bottom: 5vh;
   background-color: rgba(0, 0, 0, .5);
 }
 
-section.meet-us div.wrap-meet-us {
+section.meet-us div.wrap-meet-us,
+section.portfolio div.wrap-portfolio {
   width: 70%;
   height: 16vh;
   margin-left: auto;
@@ -387,12 +384,14 @@ section.meet-us div.wrap-meet-us {
   text-align: center;
 }
 
-section.meet-us p {
+section.meet-us p,
+section.portfolio p {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 14px;
 }
 
-section.meet-us h2 {
+section.meet-us h2,
+section.portfolio h2 {
   display: inline-block;
   border-top: .5px solid white;
   font-weight: 400;
@@ -400,143 +399,158 @@ section.meet-us h2 {
 }
 
 /* size min-width: 360px */
-
 @media (min-width: 360px) {
 
-  section.meet-us p {
+  section.meet-us p,
+  section.portfolio p {
     font-size: 16px;
-
   }
 
-  section.meet-us h2 {
+  section.meet-us h2,
+  section.portfolio h2 {
     font-size: 35px;
   }
-
 }
 
 /* size min-width: 480px */
-
 @media (min-width: 480px) {
 
-  section.meet-us p {
+  section.meet-us p,
+  section.portfolio p {
     font-size: 20px;
-
   }
 
-  section.meet-us h2 {
+  section.meet-us h2,
+  section.portfolio h2 {
     font-size: 47px;
   }
-
 }
 
 /* size min-width: 600px */
-
 @media (min-width: 600px) {
 
-  section.meet-us p {
+  section.meet-us p,
+  section.portfolio p {
     font-size: 22px;
-
   }
 
-  section.meet-us h2 {
+  section.meet-us h2,
+  section.portfolio h2 {
     font-size: 56px;
   }
-
 }
 
 /* size min-width: 768px */
-
 @media (min-width: 768px) {
 
-  section.meet-us p {
+  section.meet-us p,
+  section.portfolio p {
     font-size: 24px;
-
   }
 
-  section.meet-us h2 {
+  section.meet-us h2,
+  section.portfolio h2 {
     font-size: 74px;
   }
-
 }
 
 /* orientation: landscape */
-
 @media (orientation: landscape) {
-  section.meet-us {
-    height: 25vw;
 
+  section.meet-us,
+  section.portfolio {
+    height: 25vw;
   }
 
-  section.meet-us div.bgc-section-meet-us {
+  section.meet-us div.bgc-section-meet-us,
+  section.portfolio div.bgc-section-portfolio {
     padding-top: 5vw;
     padding-bottom: 5vw;
   }
 
-  section.meet-us div.wrap-meet-us {
+  section.meet-us div.wrap-meet-us,
+  section.portfolio div.wrap-portfolio {
     height: 15vw;
     padding: 2vw 20%;
   }
 
-  section.meet-us p {
+  section.meet-us p,
+  section.portfolio p {
     font-size: 14px;
   }
 
-  section.meet-us h2 {
+  section.meet-us h2,
+  section.portfolio h2 {
     font-size: 28px;
   }
 }
 
 /* size min-width: 640px;*/
 @media (orientation: landscape) and (min-width: 640px) {
-  section.meet-us p {
+
+  section.meet-us p,
+  section.portfolio p {
     font-size: 16px;
   }
 
-  section.meet-us h2 {
+  section.meet-us h2,
+  section.portfolio h2 {
     font-size: 36px;
   }
 }
 
-/* size min-width: 823px;*/
-@media (orientation: landscape) and (min-width: 823px) {
-  section.meet-us p {
+/* size min-width: 830px;*/
+@media (orientation: landscape) and (min-width: 830px) {
+
+  section.meet-us p,
+  section.portfolio p {
     font-size: 18px;
   }
 
-  section.meet-us h2 {
+  section.meet-us h2,
+  section.portfolio h2 {
     font-size: 48px;
   }
 }
 
 /* size min-width: 1024px;*/
 @media (orientation: landscape) and (min-width: 1024px) {
-  section.meet-us p {
+
+  section.meet-us p,
+  section.portfolio p {
     font-size: 20px;
   }
 
-  section.meet-us h2 {
-    font-size: 60px;
+  section.meet-us h2,
+  section.portfolio h2 {
+    font-size: 58px;
   }
 }
 
 /* size min-width: 1280px;*/
 @media (orientation: landscape) and (min-width: 1280px) {
-  section.meet-us p {
+
+  section.meet-us p,
+  section.portfolio p {
     font-size: 24px;
   }
 
-  section.meet-us h2 {
+  section.meet-us h2,
+  section.portfolio h2 {
     font-size: 74px;
   }
 }
 
 /* size min-width: 1600px;*/
 @media (orientation: landscape) and (min-width: 1600px) {
-  section.meet-us p {
+
+  section.meet-us p,
+  section.portfolio p {
     font-size: 26px;
   }
 
-  section.meet-us h2 {
+  section.meet-us h2,
+  section.portfolio h2 {
     font-size: 94px;
   }
 }
@@ -623,19 +637,6 @@ section.persons div.border {
 
 }
 
-
-/*
-section.persons div.triangle {
-  background-image: linear-gradient(45deg, transparent 50%, white 50%);
-  position: absolute;
-  top: -20px;
-  left: calc(50% - 20px);
-  transform: rotate(135deg);
-  height: 40px;
-  width: 40px;
-}
-*/
-
 section.persons div.triangle {
   position: absolute;
   top: 0;
@@ -649,33 +650,27 @@ section.persons div.triangle {
   border-top: 30px solid #fff;
 }
 
-
 /* size min-width: 480px */
 
 @media (min-width: 480px) {
-
   section.persons h1 {
     font-size: 30px;
   }
 
-
   section.persons h2 {
     border-bottom-width: 3px;
     font-size: 18px;
-
   }
 
   section.persons p {
     padding: 30px 0;
     font-size: 18px;
   }
-
 }
 
 /* size min-width: 533px two columns*/
 
 @media (min-width: 533px) {
-
   section.persons div.right {
     float: right;
   }
@@ -685,23 +680,20 @@ section.persons div.triangle {
   }
 
   section.persons div.description {
-    /*    margin-top: 5vmax;*/
     position: relative;
     width: 50%;
     margin: 0;
     height: 40vmax;
-    padding: 0;
-    /*
-    height: 35vmax;
-    margin-left: auto;
-    margin-right: auto;
-*/
-    /*    padding: 20px 10px 0;*/
-    /*    border: 2px solid #444;*/
+    padding: 5vh;
+    padding-left: 10vh;
+    padding-right: 0;
     border: none;
-    /*    text-align: center;*/
-    /*    color: #444;*/
+  }
 
+  section.persons div.description.right {
+    padding: 5vh;
+    padding-left: 0;
+    padding-right: 10vh;
   }
 
   section.persons div.description::before {
@@ -709,46 +701,23 @@ section.persons div.triangle {
     display: block;
     position: absolute;
     top: 0;
-    /*    right: 0;*/
+    right: 0;
     width: 90%;
     height: 35vmax;
     margin: 5%;
     margin-right: 0;
     border: 2px solid #444;
-    /*    border-right: none;*/
   }
 
   section.persons div.description.left::before {
-    /*
-    content: "";
-    display: block;
-    position: absolute;
-*/
-    /*    top: 0;*/
     right: 0;
-    /*
-    width: 90%;
-    height: 35vmax;
-    margin: 5%;
-*/
     margin-right: 0;
-    /*    border: 2px solid #444;*/
     border-right: none;
   }
 
   section.persons div.description.right::before {
-    /*
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-*/
     left: 0;
     right: auto;
-    /*
-    width: 90%;
-    height: 35vmax;
-*/
     margin-left: 0;
     margin-right: 5%;
     border-right: 2px solid #444;
@@ -757,8 +726,6 @@ section.persons div.triangle {
 
   section.persons h1 {
     font-size: 24px;
-    padding-top: 20px;
-
   }
 
   section.persons h2 {
@@ -780,17 +747,88 @@ section.persons div.triangle {
     margin-left: 0;
     border-top: 2px solid white;
     border-left: none;
-
   }
 
-  section.persons .left div.triangle {
+  section.persons .right div.border {
+    margin-left: 10%;
+    margin-right: 0;
+    border-left: 2px solid white;
+    border-right: none;
+  }
+
+  section.persons div.triangle {
     top: calc(50% - 30px);
     left: 0;
-    /*
-  width: 0;
-  height: 0;
-*/
     border-top: 30px solid transparent;
     border-bottom: 30px solid transparent;
     border-left: 30px solid #fff;
+  }
+
+  section.persons .right div.triangle {
+    top: calc(50% - 30px);
+    left: calc(100% - 30px);
+    border-right: 30px solid #fff;
+    border-left: 0;
+  }
+
+  /* size min-width: 700px;*/
+  @media (min-width: 700px) {
+    section.persons h1 {
+      padding-top: 2vh;
+      font-size: 32px;
+    }
+
+    section.persons h2 {
+      font-size: 20px;
+    }
+
+    section.persons p {
+      font-size: 18px;
+    }
+
+    section.persons div.triangle {
+      top: calc(50% - 40px);
+      border-top: 40px solid transparent;
+      border-bottom: 40px solid transparent;
+      border-left: 40px solid #fff;
+    }
+
+    section.persons .right div.triangle {
+      top: calc(50% - 40px);
+      left: calc(100% - 40px);
+      border-right: 40px solid #fff;
+      border-left: 0;
+    }
+
+  }
+
+  /* size min-width: 1024px;*/
+  @media (min-width: 1024px) {
+    section.persons h1 {
+      padding-top: 5vh;
+      font-size: 40px;
+    }
+
+    section.persons h2 {
+      font-size: 30px;
+    }
+
+    section.persons p {
+      font-size: 28px;
+    }
+
+    section.persons div.triangle {
+      top: calc(50% - 50px);
+      border-top: 50px solid transparent;
+      border-bottom: 50px solid transparent;
+      border-left: 50px solid #fff;
+    }
+
+    section.persons .right div.triangle {
+      top: calc(50% - 50px);
+      left: calc(100% - 50px);
+      border-right: 50px solid #fff;
+      border-left: 0;
+    }
+
   }
